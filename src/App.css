@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 500px; /* Reduced max width for better mobile fit */
+  background-color: white;
+  padding: 15px; /* Reduced padding for a more compact layout */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 15px; /* Reduced margin */
+  font-size: 20px; /* Adjusted font size */
+  color: #444;
+}
+
+.video-box {
+  background-color: #000;
+  color: #fff;
+  padding: 15px; /* Reduced padding for smaller devices */
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Reduced gap between inputs */
+  margin-bottom: 15px;
+}
+
+input,
+select,
+button {
+  padding: 8px; /* Reduced padding */
+  font-size: 14px; /* Reduced font size */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  padding: 8px; /* Reduced padding */
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+strong {
+  color: #e74c3c;
+}
+.option-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.option-buttons button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #ffffff; /* White background for better visibility */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333; /* Dark text color for better contrast */
+  transition: 0.3s;
+}
+
+.option-buttons button.selected {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.option-buttons button:hover {
+  background-color: #f1f1f1; /* Light hover effect */
+}
+
+@media (max-width: 768px) {
+  .option-buttons button {
+    padding: 8px 16px; /* Adjusted padding for mobile */
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+}
+
+
+button.toggle-history-btn {
+  width: auto; /* Make the width auto to adjust based on text */
+  padding: 6px 12px; /* Reduced padding */
+  margin: 10px auto;
+  display: block;
+  font-size: 12px; /* Smaller font size */
+  background-color: #28a745;
+}
+
+button.toggle-history-btn:hover {
+  background-color: #1e7e34;
+}
